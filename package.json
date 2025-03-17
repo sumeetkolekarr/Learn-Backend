@@ -9,6 +9,7 @@
   "author": "Sumeet Kolekarr",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
   }
 }
