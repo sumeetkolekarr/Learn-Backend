@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require("express");
+const cats = require('./data');
 
 const app = express();
 
@@ -18,7 +19,8 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/cat", (req, res) => {
-  res.send("<h2>Cats are seen here</h2>");
+  // res.send("<h2>Cats are seen here</h2>");
+  res.json(cats)
 });
 
 app.listen(process.env.PORT, () => {
